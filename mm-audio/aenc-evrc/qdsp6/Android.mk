@@ -55,9 +55,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_CFLAGS            := $(libOmxEvrcEnc-def)
 LOCAL_C_INCLUDES        := $(mm-evrc-enc-test-inc)
 LOCAL_PRELINK_MODULE    := false
-LOCAL_SHARED_LIBRARIES  := libmm-omxcore
 LOCAL_SHARED_LIBRARIES  += libOmxEvrcEnc
-LOCAL_SHARED_LIBRARIES  += libaudioalsa
 LOCAL_SRC_FILES         := test/omx_evrc_enc_test.c
 
 include $(BUILD_EXECUTABLE)

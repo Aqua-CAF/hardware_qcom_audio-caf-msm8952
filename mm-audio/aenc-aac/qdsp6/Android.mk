@@ -56,9 +56,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_CFLAGS            := $(libOmxAacEnc-def)
 LOCAL_C_INCLUDES        := $(mm-aac-enc-test-inc)
 LOCAL_PRELINK_MODULE    := false
-LOCAL_SHARED_LIBRARIES  := libmm-omxcore
 LOCAL_SHARED_LIBRARIES  += libOmxAacEnc
-LOCAL_SHARED_LIBRARIES  += libaudioalsa
 LOCAL_SRC_FILES         := test/omx_aac_enc_test.c
 
 include $(BUILD_EXECUTABLE)
